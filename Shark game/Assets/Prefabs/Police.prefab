@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: -8751696117244807216}
   - component: {fileID: -2523561460352188922}
   m_Layer: 0
-  m_Name: TT_demo_police
+  m_Name: Police
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -162,7 +162,7 @@ Animator:
   m_GameObject: {fileID: 8619338778009079851}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: fdfb5e1c4a1b339489c0eddebb1ab872, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0293d9e8fd73ca43a08318ead6d94d6, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -200,7 +200,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 32
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!65 &-2523561460352188922
 BoxCollider:
