@@ -21,6 +21,7 @@ public class enemyAI : MonoBehaviour
     bool alreadyAttacked;
     public GameObject projectile;
     public float projectileVelocity;
+    public Transform BulletSpawn;
 
     //States
     public float sightRange, attackRange;
@@ -83,7 +84,7 @@ public class enemyAI : MonoBehaviour
         if (!alreadyAttacked)
         {
             ///Attack code here
-            Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
+            Rigidbody rb = Instantiate(projectile, BulletSpawn.position, new Quaternion.eulerAngles(rotation.x, rotation.z, rotation.y) ).GetComponent<Rigidbody>();
             rb.AddForce(transform.forward * projectileVelocity, ForceMode.Impulse);
             rb.AddForce(transform.up * 8f, ForceMode.Impulse);
             ///End of attack code
