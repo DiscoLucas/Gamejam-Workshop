@@ -36,7 +36,7 @@ public class PeopleSpawner : MonoBehaviour
     {   
         Instantiate(spawnee, transform.position, transform.rotation);
         ++people;
-        //Hvis stop spawning er klikket på i Inspectoren, så spawner den kun 1
+        //Hvis stop spawning er klikket på i Inspectoren, inden Run, så spawner den kun 1
         if(stopSpawning)
         {
             CancelInvoke("SpawnObject");
