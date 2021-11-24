@@ -1694,7 +1694,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239669973}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.05, y: 1.8525758, z: 17.1}
+  m_LocalPosition: {x: 51.9, y: 1.8525758, z: 37.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2660,7 +2660,7 @@ MonoBehaviour:
   walkPointRange: 0.79
   timeBetweenAttacks: 5
   projectile: {fileID: 7049658811648726941, guid: 0122d269dcfcc6f4c97b0066c5dc1f4f, type: 3}
-  projectileVelocity: 500
+  projectileVelocity: 200
   BulletSpawn: {fileID: 1908385418}
   sightRange: 64.96
   attackRange: 33.9
