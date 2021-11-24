@@ -9,6 +9,6 @@ public class Exlposion : MonoBehaviour
  void OnCollisionEnter(){
      GameObject expl = Instantiate(explosion, transform.position, Quaternion.identity) as GameObject;
      Destroy(gameObject); // destroy the grenade
-     Destroy(expl, 3); // delete the explosion after 3 seconds
+     Destroy(expl, 2); // delete the explosion after 3 seconds
 }
 }
