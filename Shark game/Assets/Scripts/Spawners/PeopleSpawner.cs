@@ -19,9 +19,18 @@ public class PeopleSpawner : MonoBehaviour
 
     void Update() 
     {
-        //Stopper spawn hvis der er 10 eller flere cylindere
-        if (people >= 10)
-        CancelInvoke("SpawnObject");
+        people = FindObjectsOfType<PeopleMovement>().GetLength(0);
+
+        // Stopper spawn hvis der er X antal spawnet eller flere 
+        if(people >= 50) 
+        {
+            CancelInvoke("SpawnObject");
+        }
+        
+        else if (people < 1) 
+        {
+            SpawnObject();
+        }
     }
 
     public void SpawnObject()
