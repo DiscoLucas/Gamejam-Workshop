@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class SharkInstanceScript : MonoBehaviour
 {
-    private GameObject shark;
+    public GameObject shark;
     // Start is called before the first frame update
-    void Start()
+    void Update()
     {
         Destroy(this.shark, 2f);
     }
