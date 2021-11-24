@@ -5,26 +5,36 @@ using System;
 
 public class PlayerGrowth : MonoBehaviour
 {
-    // Start is called before the first frame update
     public Level level;
+
+    // Start is called before the first frame update
     void Start()
     {
         level = new Level(1, OnLevelUp);
 
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            Destroy(other.gameObject);
+            level.AddExp(100);
+
+        }
+    }
+
     public void OnLevelUp()
     {
-        print("I leveled up!");
+        print("The sharknado grew in size!");
     }
+
+
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            level.AddExp(100);
-            
-        }
+      
+       
     }
 }
