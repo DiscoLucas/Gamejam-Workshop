@@ -21,10 +21,10 @@ public class PlayerGrowth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            level.AddExp(100);
-            
-        }
+      collideCheck = myGameObject.GetComponent<CollideCheck>();    
+ 
+                 if (collideCheck .IsCollided() && whatever other conditions you want)
+                 {
+                     collideCheck .ResetCollision();
+                 }
     }
-}
