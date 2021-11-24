@@ -29,4 +29,6 @@ public class PlayerShooting : MonoBehaviour {
         // Destroy the bullet after 2 seconds
         Destroy(bullet, 2.0f);
     }
+
+
 }
