@@ -27,7 +27,7 @@ public class PeopleSpawner : MonoBehaviour
             CancelInvoke("SpawnObject");
         }
         
-        else if (people < 1) 
+        else if (people < 10) 
         {
             SpawnObject();
         }
