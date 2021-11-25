@@ -2,25 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour
+{
+	private float speed = 10f;
+    private float jumpForce = 8f;
+    private float gravity = 30f;
+    private Vector3 moveDir = Vector3.zero;
+    
+    void Start()
+    {
+        
+    }
 
-    private CharacterController m_charCont;
-
-    float m_horizontal;
-    float m_vertical;
-
-    public float PlayerSpeed = 0.3f;
-
-	void Start () {
-        m_charCont = GetComponent<CharacterController>();
-	}
-
-	void Update () {
-        m_horizontal = Input.GetAxis("Horizontal");
-        m_vertical = Input.GetAxis("Vertical");
-
-        Vector3 m_playerMovement = new Vector3(m_horizontal, 0f, m_vertical) * PlayerSpeed;
-
-        m_charCont.Move(m_playerMovement);
-	}
+    // Update is called once per frame
+    void Update(){
+	   CharacterController controller = gameObject.GetComponent<CharacterController> ();
+       if (controller.isGrounded) {
+            moveDir = new Vector3 (Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+            moveDir = transform.TransformDirection (moveDir);
+            moveDir *= speed;
+            if (Input.GetButtonDown ("Jump")) {
+                moveDir.y = jumpForce;
+            }
+       }
+       
+    moveDir.y -= gravity * Time.deltaTime;
+    controller.Move (moveDir * Time.deltaTime);
+       
+    }
 }
