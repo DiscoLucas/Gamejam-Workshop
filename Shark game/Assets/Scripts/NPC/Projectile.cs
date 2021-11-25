@@ -15,7 +15,7 @@ public class Projectile : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            this.transform.localScale = this.transform.localScale + new Vector3(-0.5f, -0.5f, -0.5f); 
+            this.transform.localScale = this.transform.localScale - new Vector3(-0.5f, -0.5f, -0.5f); 
 
         }
     }
