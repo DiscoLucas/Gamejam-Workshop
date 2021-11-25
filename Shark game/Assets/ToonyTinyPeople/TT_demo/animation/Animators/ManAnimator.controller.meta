@@ -1,12 +1,8 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Shark game/Assets/ToonyTinyPeople/TT_demo/animation/Animators/ManAnimator.controller.meta
-guid: bd4e49189ba317d40b94e6e74e47609e
-=======
-guid: 7249e90c33d1fa74ca8be11ced5c77b7
->>>>>>> Enemy-AI:Shark game/Assets/Textures/NewLayer.terrainlayer.meta
+guid: c6f9e46bff5b8854fb2e49928b2147d4
 NativeFormatImporter:
   externalObjects: {}
-  mainObjectFileID: 8574412962073106934
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

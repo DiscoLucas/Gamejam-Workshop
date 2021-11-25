@@ -1,12 +1,8 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Shark game/Assets/Water Float/Demo/Boat/Texture/New Material.mat.meta
-guid: 0878d518ab891b94c9d6de8ccb8584ee
-=======
-guid: 0f529db9a5d66944595c823b5bfc9f64
->>>>>>> Enemy-AI:Shark game/Assets/Textures/NewLayer 1.terrainlayer.meta
+guid: df8b2b190693a98439b82beb1a20f6bb
 NativeFormatImporter:
   externalObjects: {}
-  mainObjectFileID: 8574412962073106934
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
