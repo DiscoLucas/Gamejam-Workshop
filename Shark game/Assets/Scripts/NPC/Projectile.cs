@@ -5,6 +5,7 @@ using System;
 
 public class Projectile : MonoBehaviour
 {
+    public Level level;
 
     // Start is called before the first frame update
     void Start()
@@ -12,11 +13,11 @@ public class Projectile : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.CompareTag("Player"))
+        if (Collision.collider.CompareTag("Player"))
         {
-            Level.AddExp(-50);
+            level.AddExp(-50);
         }
     }
 
