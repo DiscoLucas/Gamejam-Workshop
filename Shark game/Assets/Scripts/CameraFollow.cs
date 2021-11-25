@@ -1,7 +1,8 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraFollow : MonoBehaviour 
-{
+public class CameraFollow : MonoBehaviour {
 
     public Transform Player;
 
@@ -12,7 +13,7 @@ public class CameraFollow : MonoBehaviour
 	}
 	
 	void Update () {
-        Vector3 m_cameraPos = new Vector3(Player.position.x, gameObject.transform.position.y, Player.position.z + camOffsetZ);
+        Vector3 m_cameraPos = new Vector3(Player.position.x - 40, gameObject.transform.position.y, Player.position.z + camOffsetZ);
 
         gameObject.transform.position = m_cameraPos;
 	}
