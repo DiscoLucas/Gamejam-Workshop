@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-	private float speed = 10f;
+	private float speed = 40f;
     private float jumpForce = 8f;
     private float gravity = 30f;
     private Vector3 moveDir = Vector3.zero;
