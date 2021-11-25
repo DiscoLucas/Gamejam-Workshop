@@ -1,8 +1,12 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Shark game/Assets/ToonyTinyPeople/TT_demo/animation/Animators/PoliceAnimator.controller.meta
 guid: d85bbb055b8b127448705f1a09e4e2a0
+=======
+guid: bf69acab111b1af46bc61a6eef09d108
+>>>>>>> Enemy-AI:Shark game/Assets/Scenes/Enemy AI testing/NavMesh.asset.meta
 NativeFormatImporter:
   externalObjects: {}
-  mainObjectFileID: 0
+  mainObjectFileID: 23800000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
