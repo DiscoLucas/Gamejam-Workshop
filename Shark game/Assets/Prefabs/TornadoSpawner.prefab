@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9314300e330d83a469c7340e9accce74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnee: {fileID: 2171548660913544809, guid: d835ff65c8e070d48bb3e494677953c9, type: 3}
+  spawnee: {fileID: 3474150892713029875, guid: 40e69ce1229ae4a348e24ee12e734246, type: 3}
   stopSpawning: 0
   spawnTime: 2
   spawnDelay: 2

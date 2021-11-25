@@ -20,7 +20,7 @@ public class TankSpawner : MonoBehaviour
     void Update() 
     {
         //Stopper spawn hvis der er 10 eller flere cylindere
-        if (tanks >= 10)
+        if (tanks >= 50)
         CancelInvoke("SpawnObject");
     }
 

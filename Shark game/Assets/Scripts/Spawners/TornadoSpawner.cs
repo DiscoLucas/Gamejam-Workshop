@@ -20,7 +20,7 @@ public class TornadoSpawner : MonoBehaviour
     void Update() 
     {
         //Stopper spawn hvis der er 10 eller flere cylindere
-        if (tornado >= 10)
+        if (tornado >= 50)
         CancelInvoke("SpawnObject");
     }
 
