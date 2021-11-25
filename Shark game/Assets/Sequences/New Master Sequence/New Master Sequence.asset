@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 713e0022c0ffe974bb14d5e0611b0797, type: 3}
+  m_Name: New Master Sequence
+  m_EditorClassIdentifier: 
+  m_RootIndex: 0
+  m_Manager:
+    rid: 7582068932411916300
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 7582068932411916300
+      type: {class: SequenceManager, ns: UnityEngine.Sequences, asm: Unity.Sequences}
+      data:
+        m_Data:
+        - rid: 7582068932411916301
+        - rid: 7582068932411916302
+        - rid: 7582068932411916303
+        - rid: 7582068932411916304
+        - rid: 7582068932411916305
+        - rid: 7582068932411916306
+        - rid: 7582068932411916307
+        m_AvailableIndices:
+          rid: -2
+    - rid: 7582068932411916301
+      type: {class: TimelineSequence, ns: UnityEngine.Sequences, asm: Unity.Sequences}
+      data:
+        m_Name: New Master Sequence
+        m_Fps: 60
+        m_Start: 0
+        m_Duration: 4
+        m_Parent: -1
+        m_Children: 010000000200000003000000
+        m_Timeline: {fileID: 11400000, guid: 909c432f7eb57401ea835ce654b531f6, type: 2}
+        m_ChildrenTrack: {fileID: -2562412809039729715, guid: 909c432f7eb57401ea835ce654b531f6, type: 2}
+        m_DefaultChildrenTrackName: Sequences
+        m_EditorialClipAsset: {fileID: 0}
+    - rid: 7582068932411916302
+      type: {class: TimelineSequence, ns: UnityEngine.Sequences, asm: Unity.Sequences}
+      data:
+        m_Name: Beach
+        m_Fps: -1
+        m_Start: 0
+        m_Duration: 4
+        m_Parent: 0
+        m_Children: 040000000500000006000000
+        m_Timeline: {fileID: 11400000, guid: 98c1b402b0ed54ac0b1d20ec81e33b4f, type: 2}
+        m_ChildrenTrack: {fileID: 8225788592450849037, guid: 98c1b402b0ed54ac0b1d20ec81e33b4f, type: 2}
+        m_DefaultChildrenTrackName: Sequences
+        m_EditorialClipAsset: {fileID: 7660593388173470161, guid: 909c432f7eb57401ea835ce654b531f6, type: 2}
+    - rid: 7582068932411916303
+      type: {class: TimelineSequence, ns: UnityEngine.Sequences, asm: Unity.Sequences}
+      data:
+        m_Name: City
+        m_Fps: -1
+        m_Start: 2
+        m_Duration: 2
+        m_Parent: 0
+        m_Children: 
+        m_Timeline: {fileID: 11400000, guid: 63bcf4f31e0da4275822211351043999, type: 2}
+        m_ChildrenTrack: {fileID: 0}
+        m_DefaultChildrenTrackName: Sequences
+        m_EditorialClipAsset: {fileID: -3559650365541695404, guid: 909c432f7eb57401ea835ce654b531f6, type: 2}
+    - rid: 7582068932411916304
+      type: {class: TimelineSequence, ns: UnityEngine.Sequences, asm: Unity.Sequences}
+      data:
+        m_Name: Close up
+        m_Fps: -1
+        m_Start: 0
+        m_Duration: 2
+        m_Parent: 0
+        m_Children: 
+        m_Timeline: {fileID: 11400000, guid: c3c0baff0d32340bf8d00987a3a0a844, type: 2}
+        m_ChildrenTrack: {fileID: 0}
+        m_DefaultChildrenTrackName: Sequences
+        m_EditorialClipAsset: {fileID: -192061082217641883, guid: 909c432f7eb57401ea835ce654b531f6, type: 2}
+    - rid: 7582068932411916305
+      type: {class: TimelineSequence, ns: UnityEngine.Sequences, asm: Unity.Sequences}
+      data:
+        m_Name: FullShotBeach
+        m_Fps: -1
+        m_Start: 0
+        m_Duration: 2
+        m_Parent: 1
+        m_Children: 
+        m_Timeline: {fileID: 11400000, guid: 8cee5e0b09fbb49adae0ccca68fb12b0, type: 2}
+        m_ChildrenTrack: {fileID: 0}
+        m_DefaultChildrenTrackName: Sequences
+        m_EditorialClipAsset: {fileID: -4373017642342650776, guid: 98c1b402b0ed54ac0b1d20ec81e33b4f, type: 2}
+    - rid: 7582068932411916306
+      type: {class: TimelineSequence, ns: UnityEngine.Sequences, asm: Unity.Sequences}
+      data:
+        m_Name: CloseUpBeach
+        m_Fps: -1
+        m_Start: 2
+        m_Duration: 2
+        m_Parent: 1
+        m_Children: 
+        m_Timeline: {fileID: 11400000, guid: 5447b2f55ec784949a51ca51a3a79fc5, type: 2}
+        m_ChildrenTrack: {fileID: 0}
+        m_DefaultChildrenTrackName: Sequences
+        m_EditorialClipAsset: {fileID: -618283882764941581, guid: 98c1b402b0ed54ac0b1d20ec81e33b4f, type: 2}
+    - rid: 7582068932411916307
+      type: {class: TimelineSequence, ns: UnityEngine.Sequences, asm: Unity.Sequences}
+      data:
+        m_Name: DollyShot
+        m_Fps: -1
+        m_Start: 4
+        m_Duration: 2
+        m_Parent: 1
+        m_Children: 
+        m_Timeline: {fileID: 11400000, guid: 2eeaf23e89dc24b7e9c67748cef56172, type: 2}
+        m_ChildrenTrack: {fileID: 0}
+        m_DefaultChildrenTrackName: Sequences
+        m_EditorialClipAsset: {fileID: -4706467566293751854, guid: 98c1b402b0ed54ac0b1d20ec81e33b4f, type: 2}
