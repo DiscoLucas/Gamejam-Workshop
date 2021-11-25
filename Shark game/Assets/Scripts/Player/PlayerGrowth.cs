@@ -27,6 +27,8 @@ public class PlayerGrowth : MonoBehaviour
     public void OnLevelUp()
     {
         print("The sharknado grew in size!");
+        this.transform.localScale = this.transform.localScale + new Vector3(1f, 1f, 1f);
+
     }
 
 
