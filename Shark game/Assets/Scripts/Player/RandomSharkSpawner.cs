@@ -26,7 +26,7 @@ public class RandomSharkSpawner : MonoBehaviour
 
     private IEnumerator SpawnSharks()
     {
-        int totalSharks = 1;
+        int totalSharks = 2;
         while(totalSharks < 10) 
         {
             //Instatiating the random sharks, and giving them momentum out from the tornado's position. 
@@ -35,7 +35,7 @@ public class RandomSharkSpawner : MonoBehaviour
             sharkRB.velocity = Vector3.forward * sharkSpeed;
 
             //Command to make the loop pause before playing again
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(1f);
 
             //Get rid of the instantiated objects
             Destroy(newShark, 2f);
