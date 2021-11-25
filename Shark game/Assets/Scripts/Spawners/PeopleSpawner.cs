@@ -22,14 +22,13 @@ public class PeopleSpawner : MonoBehaviour
         people = FindObjectsOfType<PeopleMovement>().GetLength(0);
 
         // Stopper spawn hvis der er X antal spawnet eller flere 
-        if(people >= 50) 
+        if(people >= 20) 
         {
             CancelInvoke("SpawnObject");
         }
-        
-        else if (people < 1) 
+         else if (people < 10) 
         {
-            SpawnObject();
+            InvokeRepeating("SpawnObject", spawnTime, spawnDelay);
         }
     }
 
@@ -37,7 +36,7 @@ public class PeopleSpawner : MonoBehaviour
     {   
         Instantiate(spawnee, transform.position, transform.rotation);
         ++people;
-        //Hvis stop spawning er klikket på i Inspectoren, så spawner den kun 1
+        //Hvis stop spawning er klikket på i Inspectoren, inden Run, så spawner den kun 1
         if(stopSpawning)
         {
             CancelInvoke("SpawnObject");

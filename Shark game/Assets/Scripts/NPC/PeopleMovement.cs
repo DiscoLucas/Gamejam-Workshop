@@ -49,7 +49,7 @@ public class PeopleMovement : MonoBehaviour
         int rotateWait = Random.Range(1, 2);
         int rotateLorR = Random.Range(1, 2);
         int walkWait = Random.Range(1, 3);
-        int walkTime = Random.Range(2, 3);
+        int walkTime = Random.Range(1, 4);
 
         iswandering = true;
 
