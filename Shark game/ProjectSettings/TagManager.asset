@@ -7,6 +7,7 @@ TagManager:
   - Main
   - Collision
   - theobjectToIgnore
+  - Enemy
   layers:
   - Default
   - TransparentFX

@@ -22,11 +22,11 @@ public class PeopleSpawner : MonoBehaviour
         people = FindObjectsOfType<PeopleMovement>().GetLength(0);
 
         // Stopper spawn hvis der er X antal spawnet eller flere 
-        if(people >= 20) 
+        if(people >= 6) 
         {
             CancelInvoke("SpawnObject");
         }
-         else if (people < 10) 
+         else if (people < 5) 
         {
             InvokeRepeating("SpawnObject", spawnTime, spawnDelay);
         }
