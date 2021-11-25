@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 179314004}
   - component: {fileID: 179314003}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: WomanSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnee: {fileID: 6252356961377389083, guid: 6be8fb3797e25954db12c95012929b6f, type: 3}
   stopSpawning: 0
-  spawnTime: 0.1
+  spawnTime: 2
   spawnDelay: 2
 --- !u!4 &179314004
 Transform:
@@ -261,12 +261,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179314002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -377.8, y: 72, z: 15.2}
+  m_LocalPosition: {x: -340.9, y: 72, z: 36.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &183303683
 GameObject:
@@ -279,7 +279,7 @@ GameObject:
   - component: {fileID: 183303685}
   - component: {fileID: 183303684}
   m_Layer: 0
-  m_Name: GameObject (2)
+  m_Name: PoliceSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -316,6 +316,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &358379602
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7478225697115775088, guid: 0fa39dc06cee2a6438733c25a26c8dc6, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7478225697115775088, guid: 0fa39dc06cee2a6438733c25a26c8dc6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -469.3428
+      objectReference: {fileID: 0}
+    - target: {fileID: 7478225697115775088, guid: 0fa39dc06cee2a6438733c25a26c8dc6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 72.987946
+      objectReference: {fileID: 0}
+    - target: {fileID: 7478225697115775088, guid: 0fa39dc06cee2a6438733c25a26c8dc6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12.052673
+      objectReference: {fileID: 0}
+    - target: {fileID: 7478225697115775088, guid: 0fa39dc06cee2a6438733c25a26c8dc6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7478225697115775088, guid: 0fa39dc06cee2a6438733c25a26c8dc6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7478225697115775088, guid: 0fa39dc06cee2a6438733c25a26c8dc6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7478225697115775088, guid: 0fa39dc06cee2a6438733c25a26c8dc6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7478225697115775088, guid: 0fa39dc06cee2a6438733c25a26c8dc6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7478225697115775088, guid: 0fa39dc06cee2a6438733c25a26c8dc6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 7478225697115775088, guid: 0fa39dc06cee2a6438733c25a26c8dc6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7478225697116208144, guid: 0fa39dc06cee2a6438733c25a26c8dc6, type: 3}
+      propertyPath: m_Name
+      value: Man
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0fa39dc06cee2a6438733c25a26c8dc6, type: 3}
 --- !u!1 &448761783
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,7 +549,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &724963066
 GameObject:
@@ -701,7 +758,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6001111580901595401, guid: e4975d3d726cf2245aefa4e82254546d, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6001111580901595401, guid: e4975d3d726cf2245aefa4e82254546d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1168,6 +1225,54 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1337785925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1337785927}
+  - component: {fileID: 1337785926}
+  m_Layer: 0
+  m_Name: TankSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1337785926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337785925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06e2a222dcc24764c8dc53a31f54fdd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnee: {fileID: 8836786694689690803, guid: 9435050958d73be4ebfc5e5fc0ce67bf, type: 3}
+  stopSpawning: 0
+  spawnTime: 2
+  spawnDelay: 2
+--- !u!4 &1337785927
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337785925}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -332.3, y: 72, z: 31.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1430093810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1470,7 +1575,7 @@ GameObject:
   - component: {fileID: 1647291593}
   - component: {fileID: 1647291592}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: ManSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1538,8 +1643,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnee: {fileID: 2171548660913544809, guid: d835ff65c8e070d48bb3e494677953c9, type: 3}
   stopSpawning: 0
-  spawnTime: 0.1
-  spawnDelay: 10
+  spawnTime: 2
+  spawnDelay: 2
 --- !u!4 &1979601843
 Transform:
   m_ObjectHideFlags: 0
@@ -1548,12 +1653,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1979601841}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -343.01624, y: 72, z: 17.554047}
+  m_LocalPosition: {x: -343.01624, y: 72, z: 43.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2076571330
 GameObject:
@@ -1682,5 +1787,5 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
