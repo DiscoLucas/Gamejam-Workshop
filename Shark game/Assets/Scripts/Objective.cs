@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Objective : MonoBehaviour
 {
@@ -17,6 +18,13 @@ public class Objective : MonoBehaviour
         set { destroyedBases = value; }
     }
 
+    private void Update()
+    {
+        if(destroyedBases == milBases)
+        {
+            SceneManager.LoadScene("Winscreen");
+        }
+    }
 
     private void OnGUI()
     {
