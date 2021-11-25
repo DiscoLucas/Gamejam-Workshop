@@ -5,15 +5,25 @@ using System;
 
 public class Projectile : MonoBehaviour
 {
-public Level level;
+    public Level level;
 
-    private void OnCollisionEnter(Collision coll)
+    // Start is called before the first frame update
+    void Start()
     {
-        if (coll.CompareTag("Player"))
+        
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (Collision.collider.CompareTag("Player"))
         {
             level.AddExp(-50);
         }
     }
 
-    
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 }
