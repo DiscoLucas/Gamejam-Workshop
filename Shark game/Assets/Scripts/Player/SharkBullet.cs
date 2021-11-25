@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class SharkBullet : MonoBehaviour
 {
- //Function will be called when this object hits an object with a collider
-     void OnCollisionEnter(Collision collision)
-    {   
-         
-          
-        //Destroy this gameobject
-        Destroy(gameObject);
- }    
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag=="Enemy")
+        {
+            Destroy(other.gameObject);
+        }
+    }
+
+
   
 }
