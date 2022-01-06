@@ -34,7 +34,10 @@ public class enemyAI : MonoBehaviour
         player = GameObject.Find("PlayerObj").transform;
         agent = GetComponent<NavMeshAgent>();
     }
-
+/// <summary>
+/// Method logic for running other running other methods.
+/// It decides if the AI should patrol, chase the player or attack the player.
+/// </summary>
     private void Update()
     {
         //Check for sight and attack range
